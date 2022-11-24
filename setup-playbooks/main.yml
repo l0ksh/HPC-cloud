@@ -1,0 +1,10 @@
+# slurm-common/main.yml
+---
+# Check connection
+- import_playbook: ping-check.yml
+
+# Copy configuration and hosts files
+- import_playbook: copy-files.yml 
+
+# Start all the service
+- import_playbook: slurm-restart.yml

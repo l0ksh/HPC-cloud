@@ -1,0 +1,17 @@
+---
+- name: Change hostnames
+  hosts: servers
+  become: true
+  gather_facts: false
+  become_user: root
+  tasks:
+  - name: Restarting and enabling all the services on servers
+    service:
+      name: '{{item}}'
+      state: restarted
+      enabled: yes
+    loop:
+      - munge
+      - slurmd
+      - slurmctld
+

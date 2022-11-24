@@ -1,0 +1,5 @@
+How to use -
+
+1. First run the "create.sh" file and provide the required compute nodes.
+2. Run "ansible-playbook -vvv setup-playbooks/main.yml"
+3. Try login to the master by using ssh : "ssh centos@master" 

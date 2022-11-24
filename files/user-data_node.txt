@@ -1,0 +1,3 @@
+#cloud-config
+runcmd:
+ - hostnamectl set-hostname cn02 --static

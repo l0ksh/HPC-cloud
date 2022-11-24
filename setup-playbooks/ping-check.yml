@@ -1,0 +1,9 @@
+---
+- name: Check if nodes are up
+  hosts: servers 
+  become: true
+  become_user: root
+  gather_facts: false
+  tasks:
+  - name: Test Connection
+    ping:

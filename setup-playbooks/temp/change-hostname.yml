@@ -1,0 +1,26 @@
+---
+- name: Change hostnames
+  hosts: master
+  become: true
+  gather_facts: false
+  become_user: root
+  tasks:
+  - name: change hostname to master
+    hostname:
+      name: master
+- hosts: cn01
+  become: true
+  gather_facts: false
+  become_user: root
+  tasks:
+  - name: change hostname to cn01
+    hostname:
+      name: cn01
+- hosts: cn02
+  become: true
+  gather_facts: false
+  become_user: root
+  tasks:
+  - name: change hostname to cn02
+    hostname:
+      name: cn02

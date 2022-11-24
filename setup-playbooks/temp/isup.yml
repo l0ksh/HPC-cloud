@@ -1,0 +1,5 @@
+- hosts: servers
+  gather_facts: false
+  tasks:
+    - wait_for: host=remote.host port=22 timeout=1
+    - debug: msg=ok

@@ -1,0 +1,4 @@
+[servers]
+master ansible_ssh_host=10.208.34.136
+cn01 ansible_ssh_host=10.208.34.252
+cn02 ansible_ssh_host=10.208.34.25

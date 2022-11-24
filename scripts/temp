@@ -1,0 +1,18 @@
+flavor=6
+image="CentOS with SLURM"
+network="39b3d618-b5bf-4fc0-8e0d-fe1094698d3f"
+keypair="l0kshSSH"
+masterdata="../files/user-data1.txt"
+nodedata="../files/user-data.txt"
+
+
+###
+
+echo "This is to check the values of variables."
+
+echo $flavor
+echo $image
+echo $network
+echo $keypair
+echo "$masterdata"  
+echo $nodedata
